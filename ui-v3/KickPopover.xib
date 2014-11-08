@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KickPopover" customModule="ui_v3" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteBTN" destination="4hd-Dd-Jrq" id="bQb-sQ-5Du"/>
+                <outlet property="numSelGD" destination="5lE-5w-Qar" id="yyM-w0-tzH"/>
+                <outlet property="topTXT" destination="zPV-cX-DdH" id="f8X-xK-Tyt"/>
+                <outlet property="view" destination="iN0-l3-epB" id="MhX-CR-jB8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kicker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPV-cX-DdH">
+                    <rect key="frame" x="8" y="4" width="201" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="201" id="RIZ-fy-FQD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <color key="textColor" white="0.24518134120000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lE-5w-Qar">
+                    <rect key="frame" x="8" y="38" width="584" height="38"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="8hD-Jb-3aj"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hd-Dd-Jrq">
+                    <rect key="frame" x="8" y="84" width="91" height="30"/>
+                    <color key="backgroundColor" white="0.29999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="vEr-hU-dz1"/>
+                    </constraints>
+                    <state key="normal" title="DELETE">
+                        <color key="titleColor" red="0.91684358020000001" green="0.74936926179999996" blue="0.0021685568829999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteKick:" destination="-1" eventType="touchUpInside" id="gqm-hC-Ck9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.91684358020000001" green="0.74936926179999996" blue="0.0021685568829999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zPV-cX-DdH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="644-P0-yPQ"/>
+                <constraint firstItem="4hd-Dd-Jrq" firstAttribute="top" secondItem="5lE-5w-Qar" secondAttribute="bottom" constant="8" id="G1N-py-QRE"/>
+                <constraint firstItem="5lE-5w-Qar" firstAttribute="top" secondItem="zPV-cX-DdH" secondAttribute="bottom" constant="4" id="W1u-GB-lF3"/>
+                <constraint firstItem="4hd-Dd-Jrq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="cAw-yJ-ewT"/>
+                <constraint firstItem="zPV-cX-DdH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="e9O-Xk-Ijp"/>
+                <constraint firstItem="5lE-5w-Qar" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="f4O-Br-7hw"/>
+                <constraint firstAttribute="trailing" secondItem="5lE-5w-Qar" secondAttribute="trailing" constant="8" id="vZA-wg-XgG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
